@@ -1,0 +1,111 @@
+/*variables*/
+html, body {
+  background: #2b7a78;
+  width: 100vw;
+}
+
+/*Projects setion styles*/
+#projects {
+  min-height: 110vh;
+  background: #2b7a78;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+#projects .container {
+  padding: 4em 5px 4em 5px;
+}
+
+#projects h1.heading-1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 0.8em;
+  color: #ffffff;
+}
+
+#projects h1.heading-2 {
+  margin: 0 0 10px 0;
+  font-size: 3.5em;
+  line-height: 3.5rem;
+  font-weight: 700;
+  color: #17252a;
+}
+
+#projects h2.heading-3 {
+  color: #c9c9c9d7;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+#projects .h2-span {
+  color: #17252a;
+}
+
+#projects .project-link {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  background: #ffffff;
+  color: #2b7a78 !important;
+  border-radius: 15px;
+}
+
+#projects .project-link:hover {
+  color: #ffffff !important;
+  background: #17252a;
+}
+
+#projects .modal-content {
+  background: #17252a !important;
+  color: #ffffff !important;
+}
+
+#projects .btn-secondary {
+  margin-top: 1em;
+  padding: 12px 30px 12px 30px;
+  background: #3aafa9;
+  font-size: 1.5rem;
+  color: #17252a;
+  border-radius: 50px;
+}
+
+#projects .btn-secondary:hover {
+  background: #ffffff;
+  color: #17252a;
+}
+
+#projects .modal-content h2 {
+  color: #3aafa9;
+}
+
+#projects .modal-content h5 {
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  #projects {
+    text-align: center;
+  }
+  #projects .nav-link {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #projects h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #projects .projects-nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  #projects .nav-link {
+    text-align: center;
+  }
+  #projects .projects-nav {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

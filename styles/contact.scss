@@ -1,0 +1,61 @@
+/*variables*/
+$background: #37517e;
+$primary-color: #47b2e4;
+$secondary-color: #323232;
+$grey: #c9c9c9d7;
+$black: #17252a;
+$tertiary-color: #888181;
+$dark: #333;
+$white: #ffffff;
+$hero: #3aafa9;
+$dark-green: #2b7a78;
+$button-hover: #2b7a78;
+$about: #225c5a;
+$animelist: #1f5755;
+
+
+/*contact*/
+#contact {
+    width: 100%;
+    min-height: 110vh;
+    background: $dark;  
+  .container {
+    margin: 4rem auto;
+  }
+    form {
+      color: white;
+    }
+  h1.contact-heading {
+  color: $white;
+  font-size: 3.5rem;
+  }
+  .btn-primary {
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    display: block;
+    padding: 12px 30px 12px 30px;
+    border: none;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 0 0 0 0;
+    color: $dark;
+    background: $white;
+  }
+  .btn-primary:hover {
+    background: $hero;
+    color: $white!important;
+  
+  }
+  .contact-fa {
+    font-size: 2rem;
+    color: $white;
+    transition: 0.3s;
+  }
+  .contact-fa:hover {
+   color: $hero;
+
+  }
+  
+  
+  }

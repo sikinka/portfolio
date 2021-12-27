@@ -1,0 +1,108 @@
+/*variables*/
+$background: #37517e;
+$primary-color: #47b2e4;
+$secondary-color: #323232;
+$grey: #c9c9c9d7;
+$black: #17252a;
+$tertiary-color: #888181;
+$dark: #333;
+$white: #ffffff;
+$hero: #3aafa9;
+$dark-green: #2b7a78;
+$button-hover: #2b7a78;
+$about: #225c5a;
+$animelist: #1f5755;
+
+
+/*skills*/
+#skills {
+    width: 100%;
+    min-height: 110vh;
+    background: $black;
+
+    .container {
+        padding: 4em 0 4em 0;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        color: $hero;
+
+    }
+
+    h2 {
+        color: $white;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    .fa-skills {
+        font-size: 5rem;
+        color: $white;
+        transition: 0.3s;
+    }
+
+    .fa-skills:hover {
+        color: $hero;
+    }
+
+
+    p {
+        color: white;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    #skills .skills-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    #skills {
+        min-height: 90vh;
+        text-align: center;
+
+        .skills-img {
+            text-align: center;
+        }
+
+        .skills-img img {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #skills {
+        min-height: 90vh;
+        text-align: center;
+    }
+
+    .skills-img img {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    #skills {
+        h1 {
+            padding: 0.5rem;
+        }
+
+        .skills-img img {
+            display: none;
+        }
+
+        .btn-primary {
+            font-size: 16px;
+            padding: 10px 24px 11px 24px;
+        }
+    }
+}

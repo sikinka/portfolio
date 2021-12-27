@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
+  <title>R20439</title>
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./styles/base.css" rel="stylesheet">
+  <link href="./styles/hero.css" rel="stylesheet">
+  <link href="./styles/projects.css" rel="stylesheet">
+  <link href="./styles/about.css" rel="stylesheet">
+  <link href="./styles/skills.css" rel="stylesheet">
+  <link href="./styles/animelist.css" rel="stylesheet">
+  <link href="./styles/contact.css" rel="stylesheet">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="./bootstrap/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/jquery.dataTables.min.js"></script>
+  <script src="./js/dataTables.bootstrap5.min.js"></script>
+
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('#animelist-table').DataTable({
+        "ajax": '../ajax/data/arrays.txt'
+      });
+    });
+  </script>
+
+
+</head>
+
+<body id="page-top">
+
+
+  <nav class="navbar navbar-expand-md ps-lg-5 ps-0 m-0 navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top"> <img src="img/brand.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-expanded="false" aria-label="Navigace">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link hero" href="#page-top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hero" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hero" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hero" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hero" href="#animelist">AnimeList</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hero contact-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <!--Hero section-->
+    <section id="hero" class="d-flex align-items-center">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center ps-lg-5 ps-md-0 ps-sm-0 pt-4 pt-lg-0">
+            <h1 class="heading-1">I'm Tomáš</h1>
+            <h1 class="heading-2 pb-1">Front-end <br> developer</h1>
+            <div class="d-block pb-2">
+              <a href="https://twitter.com/Siki_HS"><i class="hero-fa fa-brands fa-twitter me-3"
+                  aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/tomas_sikora98/"><i class="hero-fa fa-brands fa-instagram me-3"
+                  aria-hidden="true"></i></a>
+              <a href="https://codepen.io/Sikinka"><i class="hero-fa fa-brands fa-codepen me-3"
+                  aria-hidden="true"></i></a>
+              <a href="https://www.twitch.tv/sikihs"><i class="hero-fa fa-brands fa-twitch" aria-hidden="true"></i></a>
+            </div>
+            <div class="d-flex justify-content-lg-start justify-content-md-start justify-content-center">
+              <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-eye me-2"></i>WORK</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 hero-img">
+            <img src="img/hero.svg" class="img-fluid" alt="hero">
+          </div>
+        </div>
+        <div class=" mouse-wrapper col-12">
+          <div class="mouse order-0">
+            <div class="scroller">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
+  <!--Hero Section end-->
+
+
+
+     <!--Projects section-->
+     <section id="projects" class="d-flex align-items-center">
+
+      <div class="container pt-lg-2">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-center ps-lg-5 ps-md-0 ps-sm-0 order-2 order-lg-1">
+            <h1 class="heading-1">Check my <br> recent</h1>
+            <h1 class="heading-2">projects</h1>
+            <h2 class="heading-3">Click the buttons above carousel to see details about projects</h2>
+          </div>
+          <div class="col-lg-8 col-md-12 col-sm-12 order-2">
+
+
+            <nav class="nav d-flex justify-content-lg-start justify-content-center">
+              <a class="project-link nav-link me-2" data-bs-toggle="modal" data-bs-target="#project1Modal" href="#">Project1</a>
+              <a class="project-link nav-link me-2" data-bs-toggle="modal" data-bs-target="#project2Modal" href="#">Project2</a>
+              <a class="project-link nav-link" data-bs-toggle="modal" data-bs-target="#project3Modal" href="#">Project3</a>
+            </nav>
+                <!--Project1Modal -->
+                <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title w-100 text-lg-start text-center ps-lg-0 ps-4" id="project1ModalLabel">Sichl Website</h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h2>
+                          Description:
+                        </h2>
+                      <h5>  Fictive computer service company website made as a semestral project for course 7WEST</h5>
+                        <h2>Used technologies:</h2>
+                      <h5>WordPress, Elementor</h5>
+                      <a href="http://sichl.euweb.cz/" target="_blank"><button class="btn btn-secondary"> live preview</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--Project2Modal -->
+                <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title w-100 text-lg-start text-center ps-lg-0 ps-4" id="project2ModalLabel">Minimalist personal website</h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h2>
+                          Description:
+                        </h2>
+                      <h5> Minimalist pure CSS personal website made as a semestral project for course 7WEST</h5>
+                        <h2>Used technologies:</h2>
+                      <h5>HTML5, CSS3</h5>
+                      <a href="https://siki.netlify.app/" target="_blank"><button class="btn btn-secondary"> live preview</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--Project3Modal -->
+                <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title w-100 text-lg-start text-center ps-lg-0 ps-4" id="project3ModalLabel">Cryptoverse</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h2>
+                          Description:
+                        </h2>
+                      <h5>Cryptoverse website made as a practice of my ReactJS knowledge</h5>
+                        <h2>Used technologies:</h2>
+                      <h5>HTML5, CSS3, JS, ReactJS </h5>
+                      <a href="https://cryptoappreact.netlify.app/" target="_blank"><button class="btn btn-secondary"> live preview</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+             
+          
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/project1.png" class="d-block w-1 img-fluid" alt="Sichl">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/project2.png" class="d-block w-100 img-fluid" alt="Minimalistic">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/project3.png" class="d-block w-100 img-fluid" alt="Cryptoverse">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  <!--Projects Section end-->
+
+
+    <!--About section-->
+    <section id="about" class="d-flex align-items-center">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 col-sm-12 d-flex flex-column justify-content-center ps-lg-5 ps-md-0 ps-sm-0 pt-4 pt-lg-0 order-2 order-lg-0">
+            <h4 class="text-lg-start text-center">My name is Tomáš Sikora, I'm from Czech republic and I'm currently studying Software engineering at University of Ostrava. Recently I figured out that I have quite a big passion in Front-end development and UI/UX design, so I want to hone my skills in this branch and get a job in the future. I also love learning languages, at this point I know Czech, Slovak, English, Polish, German, Korean and Japanese. I also love watching Anime, playing some Hearthstone or doing workout in my free time. If you want to know more or talk to me about anything, just </h4>
+            <div class="d-flex justify-content-lg-start justify-content-center">
+              <a href="#contact" class="btn btn-primary">Contact me</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 col-sm-12 about-img">
+            <img src="img/about.svg" class="img-fluid order-1 order-lg-2" alt="hero">
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
+
+  <!--About Section end-->
+
+
+  <!--Skills section-->
+    <section id="skills" class="">
+
+      <div class="container">
+        <div class="row mt-sm-0">
+          <div class="col-lg-5 mt-lg-5 mt-md-3 mt-sm-0 d-flex flex-column">
+            <h1 class="ms-1">Technologies I'm <br class="d-none d-lg-block">comfortable with</h1>
+            <h2 class="ms-1">These are the technologies <br> that I mostly use <br> when I'm working <br> on some project</h2>
+
+          </div>
+          <div class="col-lg-7 d-flex flex-row">
+           <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <i class=" fa-skills fa-brands fa-html5 mb-4"></i>
+                <h3 class="mb-2 text-white">HTML5</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <i class=" fa-skills fa-brands fa-css3-alt mb-4"></i>
+                <h3 class="mb-2 text-white">CSS3</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <i class=" fa-skills fa-brands fa-bootstrap mb-4"></i>
+                <h3 class="mb-2 text-white">Bootstrap</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <i class=" fa-skills fa-brands fa-sass mb-4"></i>
+                <h3 class="mb-2 text-white">Sass</h3>
+              </div>
+           </div>
+           <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class=" fa-skills fa-brands fa-js mb-4"></i>
+              <h3 class="mb-2 text-white">JavaScript</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class=" fa-skills fa-brands fa-react mb-4"></i>
+              <h3 class="mb-2 text-white">React</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class=" fa-skills fa-brands fa-figma mb-4"></i>
+              <h3 class="mb-2 text-white">Figma</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class=" fa-skills fa-brands fa-wordpress mb-4"></i>
+              <h3 class="mb-2 text-white">WordPress</h3>
+            </div>
+        </div>     
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12 skills-img">
+          <img src="img/design.svg" class="img-fluid" alt="">
+        </div>
+    
+
+    </section>
+
+  <!--Skills Section end-->
+
+
+
+  <!--Animelist Section-->
+  <section id="animelist" class="d-flex align-items-center justify-content-center" >
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="animelist-heading text-center pb-5">Animelist with genres <br class="d-none d-lg-block">and  my personal rating</h1>
+            
+          <table id="animelist-table" class="table bg-dark" style="width:100%">
+            <thead>
+              <tr class="text-white">
+                <th>Anime</th>
+                <th>Genre</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr class="text-white">
+                <th>Anime</th>
+                <th>Genre</th>
+                <th>Rating</th>
+            </tfoot >
+          </table>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+    <!--AnimeList Section end-->
+
+
+
+
+  <!--Contact Section-->
+  <section id="contact" class="d-flex align-items-center justify-content-center" >
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+         <div class="container">
+          <h1 class="contact-heading text-center">Get in touch</h1>
+          <div class="d-block text-center">
+            <a href="https://twitter.com/Siki_HS"><i class="contact-fa fa-brands fa-twitter me-3"
+                aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tomas_sikora98/"><i class="contact-fa fa-brands fa-instagram me-3"
+                aria-hidden="true"></i></a>
+          </div>
+         </div>
+          
+                  
+         <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <input type="hidden" name="form-name" value="contact">
+    <div class="mb-3">
+      <div class="input-group">
+        <div class="input-group-text"><i class="fa-solid fa-user"></i></div>
+        <input type="text" class="form-control" id="name" placeholder="Name">
+      </div>
+  </div>
+  <div class="mb-3">
+    <div class="input-group">
+      <div class="input-group-text"><i class="fa-solid fa-user"></i></div>
+      <input type="text" class="form-control" id="surname" placeholder="Surname">
+    </div>
+</div>
+<div class="mb-3">
+  <div class="input-group">
+    <div class="input-group-text"><i class="fa-solid fa-user"></i></div>
+    <input type="text" class="form-control" id="age" placeholder="Age">
+  </div> </div>
+
+  <div class="mb-3">
+    <div class="input-group">
+      <div class="input-group-text"><i class="fa-solid fa-at"></i></div>
+      <input type="text" class="form-control" id="email" placeholder="E-mail">
+    </div> </div>
+    <div class="mb-3">        
+
+<div class="d-flex flex-column">  <div class="input-group">
+  <div class="input-group-text me-2"><i class="fa-solid fa-venus-mars"></i></div>
+  <div class="form-check">
+    <input class="form-check-input me-2" type="radio" name="pohlavi" id="muz">
+    <label class="form-check-label me-2" for="muz">
+      muž
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pohlavi" id="zena">
+    <label class="form-check-label" for="zena">
+      žena
+    </label>
+  </div>
+</div></div>
+    </div>
+    <div class="mb-3">
+      <select class="form-select" id="stat">
+        <option value="0">Reason you fill this form</option>
+        <option value="1">I'm bored</option>
+        <option value="2">I want to know more about you</option>
+        <option value="3">Business inquries</option>
+        <option value="4">Other(tell me in message below)</option>
+      </select>  
+  </div>
+  <div class="mb-3">          
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox"  id="vaccine" name="vaccinated">
+    <label class="form-check-label" for="vaccine">
+   Check if you are vaccinated
+    </label>
+  </div>
+
+  </div>
+  <div class="mb-3">
+      <input type="text" class="form-control" id="subject" placeholder="Subject">
+</div>
+
+  <div class="mb-3">
+    <textarea class="form-control" id="note" rows="3" placeholder="Tell me anything you want to tell me..."></textarea>
+  </div>
+
+  <div class="d-flex flex-column">  <div class="input-group">
+    <label for="dificulty" class="form-label me-2">Was this form too long?</label>
+    <div class="form-check">
+      <input class="form-check-input me-2" type="radio" name="dificulty" id="yes">
+      <label class="form-check-label me-2" for="yes">
+        yes
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="dificulty" id="no">
+      <label class="form-check-label" for="no">
+        no
+      </label>
+    </div>
+  </div></div>
+
+  <div data-netlify-recaptcha="true"></div>  
+  <div class="d-flex justify-content-lg-start justify-content-center">
+   
+  <button type="submit" class="btn btn-primary">Send form</button>
+</a>
+  </div>
+</form>
+          
+        </div>
+      </div>
+    </div>
+
+  </section>
+ <!--Contact Section end-->
+
+  </main>
+
+  <div class="col-12 text-center">
+    <footer class="footer mt-auto pt-4 pb-4">
+      <div class="text-center text-white">&copy;R20439</div>
+      <div class="d-block pb-2">
+        <a href="https://twitter.com/Siki_HS"><i class="footer-fa fa-brands fa-twitter me-3"
+            aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/tomas_sikora98/"><i class="footer-fa fa-brands fa-instagram me-3"
+            aria-hidden="true"></i></a>
+        <a href="https://codepen.io/Sikinka"><i class="footer-fa fa-brands fa-codepen me-3"
+            aria-hidden="true"></i></a>
+        <a href="https://www.twitch.tv/sikihs"><i class="footer-fa fa-brands fa-twitch" aria-hidden="true"></i></a>
+      </div>
+      <a href="mailto:r20439@student.osu.cz">r20439@student.osu.cz</a>
+
+    </footer>
+  </div>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

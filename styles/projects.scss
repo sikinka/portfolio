@@ -1,0 +1,138 @@
+/*variables*/
+$background: #37517e;
+$primary-color: #47b2e4;
+$secondary-color: #323232;
+$grey: #c9c9c9d7;
+$black: #17252a;
+$tertiary-color: #888181;
+$dark: #333;
+$white: #ffffff;
+$hero: #3aafa9;
+$dark-green: #2b7a78;
+$button-hover: #2b7a78;
+$about: #225c5a;
+$animelist: #1f5755;
+
+html, body {
+  background: $dark-green;
+  width: 100vw;
+
+
+  }
+/*Projects setion styles*/
+#projects {
+    min-height: 110vh;
+    background: $dark-green;
+    overflow-x: hidden;
+    width: 100vw;
+    .container {
+        padding: 4em 5px 4em 5px;
+    }
+
+    h1.heading-1 {
+        font-size: 3.5em;
+        font-weight: 700;
+        line-height: 0.8em;
+        color: $white;
+    }
+
+    h1.heading-2 {
+        margin: 0 0 10px 0;
+        font-size: 3.5em;
+        line-height: 3.5rem;
+        font-weight: 700;
+        color: $black;
+    }
+
+    h2.heading-3 {
+        color: $grey;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    .h2-span {
+        color: $black;
+    }
+
+    .project-link {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        background: $white;
+        color: $dark-green !important;
+        border-radius: 15px;
+    }
+
+    .project-link:hover {
+        color: $white !important;
+        background: $black;
+    }
+
+    .modal-content {
+        background: $black !important;
+        color: $white !important;
+    }
+
+    .btn-secondary {
+        margin-top: 1em;
+        padding: 12px 30px 12px 30px;
+        background: $hero;
+        font-size: 1.5rem;
+        color: $black;
+        border-radius: 50px;
+    }
+
+
+
+    .btn-secondary:hover {
+        background: $white;
+        color: $black;
+    }
+
+    .modal-content h2 {
+        color: $hero;
+    }
+
+    .modal-content h5 {
+        color: $white;
+    }
+}
+
+
+@media (max-width: 991px) {
+    #projects {
+        text-align: center;
+
+        .nav-link {
+            text-align: center;
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    #projects {
+        h1 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        .projects-nav {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+
+    #projects {
+        .nav-link {
+            text-align: center;
+        }
+
+        .projects-nav {
+            text-align: center;
+        }
+    }
+}

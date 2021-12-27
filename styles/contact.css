@@ -1,0 +1,52 @@
+/*variables*/
+/*contact*/
+#contact {
+  width: 100%;
+  min-height: 110vh;
+  background: #333;
+}
+
+#contact .container {
+  margin: 4rem auto;
+}
+
+#contact form {
+  color: white;
+}
+
+#contact h1.contact-heading {
+  color: #ffffff;
+  font-size: 3.5rem;
+}
+
+#contact .btn-primary {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  display: block;
+  padding: 12px 30px 12px 30px;
+  border: none;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 0 0 0;
+  color: #333;
+  background: #ffffff;
+}
+
+#contact .btn-primary:hover {
+  background: #3aafa9;
+  color: #ffffff !important;
+}
+
+#contact .contact-fa {
+  font-size: 2rem;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#contact .contact-fa:hover {
+  color: #3aafa9;
+}
+/*# sourceMappingURL=contact.css.map */

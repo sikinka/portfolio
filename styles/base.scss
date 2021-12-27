@@ -1,0 +1,95 @@
+/*variables*/
+$background: #37517e;
+$primary-color: #47b2e4;
+$secondary-color: #323232;
+$grey: #c9c9c9d7;
+$black: #17252a;
+$tertiary-color: #888181;
+$dark: #333;
+$white: #ffffff;
+$hero: #3aafa9;
+$dark-green: #2b7a78;
+$button-hover: #2b7a78;
+$about: #225c5a;
+$animelist: #1f5755;
+
+/*base styles*/
+html, body {
+  font-family: "Roboto", sans-serif;
+background: $dark;
+overflow-x: hidden;
+width: 100vw;
+}
+
+footer {
+  background-color: $dark;
+  .footer-fa {
+    font-size: 1.5rem;
+    color: $white;
+    transition: 0.3s;
+  }
+  .footer-fa:hover {
+   color: $hero;
+
+  }
+  a {
+    color: white;
+    transition: 0.3s;
+  }
+  a:hover {
+    color: $hero;
+  }
+
+}
+
+/*navbar styles*/
+.navbar {
+  background: $hero;
+  width: 100%;
+padding-right: 0.5rem;
+}
+.nav-item {
+  padding-left: 10px;
+}
+.nav-link {
+  transition: 0.3s;
+  color: $white!important;
+  font-size: 1em;
+  padding-left: 10px;
+}
+.nav-link:hover {
+  color: $black!important;
+}
+@media (min-width: 992px) {
+  .contact-link {
+    border-radius: 20px;
+    background-color: $black;
+    color: $hero!important;
+  }
+  .contact-link:hover {
+  background:$white;
+  color: $black!important;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-link.contact-link {
+    border-radius: 20px;
+    background-color: black;
+    color:$hero !important;
+  }
+  .contact-link:hover {
+    background:$white;
+    color: $black!important;
+    }
+}
+@media (max-width: 767.9px) {
+  .nav-link.contact-link {
+  color: $white !important;
+  background: none;
+  }
+
+  .nav-link.contact-link:hover {
+    color: $black!important;
+  }
+}

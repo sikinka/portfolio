@@ -1,0 +1,51 @@
+/*variables*/
+/*animelist*/
+#animelist {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+
+#animelist h1.animelist-heading {
+  color: #2b7a78;
+  font-size: 3.5rem;
+  margin: auto 5rem;
+}
+
+#animelist .container {
+  margin: 4rem auto;
+}
+
+#animelist #animelist-table thead, #animelist #animelist-table tfoot {
+  background: #2B7A78;
+}
+
+#animelist #animelist-table tbody {
+  background: #333;
+  color: #ffffff !important;
+}
+
+#animelist .page-item.active .page-link {
+  color: white;
+  background: #2B7A78;
+  border-color: #2B7A78;
+}
+
+#animelist .page-link {
+  color: #2B7A78;
+}
+
+#animelist .dataTables_info {
+  color: #2b7a78;
+}
+
+#animelist label {
+  color: #2b7a78;
+}
+
+@media (max-width: 991px) {
+  #animelist h1.animelist-heading {
+    margin: auto 1rem;
+  }
+}
+/*# sourceMappingURL=animelist.css.map */

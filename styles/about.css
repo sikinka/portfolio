@@ -1,0 +1,60 @@
+/*variables*/
+/*about*/
+#about {
+  width: 100%;
+  min-height: 110vh;
+  background: #225c5a;
+}
+
+#about h4 {
+  color: #ffffff;
+}
+
+#about .btn-primary {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  display: block;
+  padding: 12px 30px 12px 30px;
+  border: none;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 0 0 0;
+  color: #225c5a;
+  background: #ffffff;
+}
+
+#about .btn-primary:hover {
+  background: #3aafa9;
+  color: #ffffff !important;
+}
+
+@media (max-width: 991px) {
+  #about .about-img img {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  #about .btn-primary {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    text-align: center;
+  }
+  #about .about-img img {
+    width: 80%;
+  }
+  #about h4 {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .about-img img {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=about.css.map */

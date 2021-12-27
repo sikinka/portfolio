@@ -1,0 +1,64 @@
+/*variables*/
+$background: #37517e;
+$primary-color: #47b2e4;
+$secondary-color: #323232;
+$grey: #c9c9c9d7;
+$black: #17252a;
+$tertiary-color: #888181;
+$dark: #333;
+$white: #ffffff;
+$hero: #3aafa9;
+$dark-green: #2b7a78;
+$button-hover: #2b7a78;
+$about: #225c5a;
+$animelist: #1f5755;
+
+/*animelist*/
+#animelist {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    h1.animelist-heading {
+      color: $dark-green;
+      font-size: 3.5rem;
+      margin: auto 5rem;
+    }
+  .container {
+    margin: 4rem auto;
+  }
+
+
+    #animelist-table {
+      thead, tfoot{
+        background: #2B7A78;
+        }
+        tbody {
+          background: $dark;
+          color: $white!important;
+        }
+    
+        
+    }
+    .page-item.active .page-link {
+      color:white;
+      background: #2B7A78;
+      border-color: #2B7A78;
+    }
+    .page-link{
+      color: #2B7A78;
+    }
+    .dataTables_info {
+      color: $dark-green;
+    }
+  label {
+    color: $dark-green;
+  }
+
+}
+@media (max-width: 991px) {
+  #animelist {
+    h1.animelist-heading {
+      margin: auto 1rem;
+    }
+  }
+}
